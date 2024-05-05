@@ -1,0 +1,22 @@
+Modelo conceitual dos dados para monitoramento de operações de extração de petróleo. 
+
+Entidades:
+1. Ponto de Extração de Petróleo: Representa um local específico onde ocorre a extração de petróleo. Pode incluir informações como ID do ponto, localização geográfica (latitude e longitude) e tipo de equipamento utilizado.
+
+2. Produção de Petróleo: Representa os dados de produção diária de petróleo em cada ponto de extração. Pode incluir informações como data, volume de petróleo produzido, temperatura, pressão e composição do petróleo.
+
+3. Eficiência Operacional: Representa os dados de eficiência operacional em cada ponto de extração. Pode incluir informações como energia consumida, água utilizada, horas de trabalho e taxa de utilização de equipamentos.
+
+4. Falhas e Manutenções: Representa os dados de falhas e manutenções em cada ponto de extração. Pode incluir informações como tipo de falha, causa da falha, tempo de inatividade e ações corretivas realizadas.
+
+5. Indicadores-Chave de Desempenho (KPIs): Representa os indicadores-chave de desempenho monitorados em cada ponto de extração. Pode incluir informações como tempo médio entre falhas (MTBF), tempo médio para reparo (MTTR), taxa de disponibilidade e taxa de utilização.
+
+Relacionamentos:
+1. Um Ponto de Extração de Petróleo pode ter uma ou várias Produções de Petróleo ao longo do tempo.
+2. Um Ponto de Extração de Petróleo pode ter uma ou várias Eficiências Operacionais ao longo do tempo.
+3. Um Ponto de Extração de Petróleo pode ter uma ou várias Falhas e Manutenções registradas ao longo do tempo.
+4. Um Ponto de Extração de Petróleo pode ter vários Indicadores-Chave de Desempenho (KPIs) associados a ele.
+
+Este é um modelo conceitual básico e genérico que pode ser adaptado e expandido com base nos requisitos específicos do projeto 
+e nos detalhes dos dados disponíveis. 
+Ele fornece uma estrutura inicial para entender os diferentes componentes envolvidos no monitoramento das operações de extração de petróleo.

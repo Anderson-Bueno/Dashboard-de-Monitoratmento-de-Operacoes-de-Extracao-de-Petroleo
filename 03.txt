@@ -1,0 +1,50 @@
+Modelo dimensional dos dados:
+
+Dimensões:
+
+1. Dimensão Ponto de Extração (ExtractionPointDim):
+   - IDPonto (PK): Identificador único do ponto de extração.
+   - Latitude: Coordenada de latitude do ponto de extração.
+   - Longitude: Coordenada de longitude do ponto de extração.
+   - TipoEquipamento: Tipo de equipamento utilizado no ponto de extração.
+
+2. Dimensão Tempo (TimeDim):
+   - DataProducao (PK): Data da produção de petróleo.
+   - Mes: Mês da produção de petróleo.
+   - Ano: Ano da produção de petróleo.
+   - Trimestre: Trimestre da produção de petróleo.
+
+Fatos:
+
+1. Fato Produção de Petróleo (OilProductionFact):
+   - IDPonto (FK): Chave estrangeira referenciando a dimensão Ponto de Extração.
+   - DataProducao (FK): Chave estrangeira referenciando a dimensão Tempo.
+   - VolumeProduzido: Volume de petróleo produzido.
+   - Temperatura: Temperatura durante a produção.
+   - Pressao: Pressão durante a produção.
+   - Composicao: Composição do petróleo.
+
+2. Fato Eficiência Operacional (OperationalEfficiencyFact):
+   - IDPonto (FK): Chave estrangeira referenciando a dimensão Ponto de Extração.
+   - DataEficiencia (FK): Chave estrangeira referenciando a dimensão Tempo.
+   - EnergiaConsumida: Energia consumida no ponto de extração.
+   - AguaUtilizada: Quantidade de água utilizada.
+   - HorasTrabalho: Horas de trabalho do equipamento.
+
+3. Fato Falhas e Manutenções (FailuresMaintenanceFact):
+   - IDPonto (FK): Chave estrangeira referenciando a dimensão Ponto de Extração.
+   - DataFalha (FK): Chave estrangeira referenciando a dimensão Tempo.
+   - TipoFalha: Tipo de falha ocorrida.
+   - Causa: Causa da falha.
+   - TempoInatividade: Tempo de inatividade devido à falha.
+   - AcoesCorretivas: Ações corretivas realizadas.
+
+4. Fato Indicadores-Chave de Desempenho (KPIsFact):
+   - IDPonto (FK): Chave estrangeira referenciando a dimensão Ponto de Extração.
+   - DataKPI (FK): Chave estrangeira referenciando a dimensão Tempo.
+   - NomeKPI: Nome do indicador-chave de desempenho.
+   - Valor: Valor do indicador.
+
+Este modelo dimensional organiza os dados de maneira eficiente para análise e relatórios, 
+separando as informações em dimensões e fatos. Isso permite uma estrutura mais flexível e 
+fácil de entender para análise e tomada de decisões no contexto das operações de extração de petróleo.

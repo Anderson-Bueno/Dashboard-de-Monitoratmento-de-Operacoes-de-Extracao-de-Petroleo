@@ -1,0 +1,45 @@
+Modelo lógico dos dados:
+
+Entidades:
+1. Ponto de Extração de Petróleo (ExtractionPoint):
+   - IDPonto (PK): Identificador único do ponto de extração.
+   - Latitude: Coordenada de latitude do ponto de extração.
+   - Longitude: Coordenada de longitude do ponto de extração.
+   - TipoEquipamento: Tipo de equipamento utilizado no ponto de extração.
+
+2. Produção de Petróleo (OilProduction):
+   - IDProducao (PK): Identificador único da produção de petróleo.
+   - IDPonto (FK): Chave estrangeira referenciando o ponto de extração.
+   - DataProducao: Data da produção de petróleo.
+   - VolumeProduzido: Volume de petróleo produzido.
+   - Temperatura: Temperatura durante a produção.
+   - Pressao: Pressão durante a produção.
+   - Composicao: Composição do petróleo.
+
+3. Eficiência Operacional (OperationalEfficiency):
+   - IDEficiencia (PK): Identificador único da eficiência operacional.
+   - IDPonto (FK): Chave estrangeira referenciando o ponto de extração.
+   - DataEficiencia: Data da medição da eficiência operacional.
+   - EnergiaConsumida: Energia consumida no ponto de extração.
+   - AguaUtilizada: Quantidade de água utilizada.
+   - HorasTrabalho: Horas de trabalho do equipamento.
+
+4. Falhas e Manutenções (FailuresMaintenance):
+   - IDFalha (PK): Identificador único da falha/manutenção.
+   - IDPonto (FK): Chave estrangeira referenciando o ponto de extração.
+   - DataFalha: Data da falha/manutenção.
+   - TipoFalha: Tipo de falha ocorrida.
+   - Causa: Causa da falha.
+   - TempoInatividade: Tempo de inatividade devido à falha.
+   - AcoesCorretivas: Ações corretivas realizadas.
+
+5. Indicadores-Chave de Desempenho (KPIs):
+   - IDKPI (PK): Identificador único do KPI.
+   - IDPonto (FK): Chave estrangeira referenciando o ponto de extração.
+   - NomeKPI: Nome do indicador-chave de desempenho.
+   - Valor: Valor do indicador.
+
+Este modelo lógico representa as entidades principais envolvidas no monitoramento das operações de extração de petróleo, 
+juntamente com seus atributos correspondentes e relacionamentos. 
+Ele fornece uma estrutura organizada para armazenar e gerenciar os dados relevantes para análise e 
+tomada de decisões no contexto das operações de extração de petróleo.

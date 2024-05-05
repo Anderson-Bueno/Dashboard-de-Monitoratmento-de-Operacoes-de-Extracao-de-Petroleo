@@ -1,0 +1,20 @@
+Elementos em um dashboard de monitoramento de operações de extração de petróleo.
+
+1. Produção Diária de Petróleo: Um gráfico de linha que mostra a produção diária de petróleo ao longo do tempo, permitindo que os usuários visualizem tendências de produção e identifiquem padrões sazonais.
+
+2. Eficiência Operacional: Um indicador de eficiência operacional que calcula a relação entre a produção de petróleo e os recursos utilizados, como energia, água ou horas de trabalho.
+
+3. Análise de Falhas: Gráficos ou tabelas que destacam as principais causas de falhas nas operações de extração de petróleo, ajudando os usuários a identificar áreas de melhoria e tomar medidas corretivas.
+
+4. Indicadores-Chave de Desempenho (KPIs): Painéis com indicadores-chave de desempenho, como tempo médio de funcionamento sem falhas, tempo médio entre manutenções preventivas e taxa de utilização de equipamentos.
+
+5. Mapa de Ativos: Um mapa interativo que mostra a localização geográfica dos ativos de extração de petróleo, permitindo que os usuários visualizem facilmente onde estão localizados os poços e as instalações.
+
+6. Alertas e Notificações: Recursos de alerta que destacam anomalias nos dados, como queda repentina na produção ou aumento nas taxas de falha, para que os usuários possam agir rapidamente.
+
+7. Comparação de Desempenho: Gráficos comparativos que mostram o desempenho de diferentes ativos de extração de petróleo, permitindo análises comparativas e identificação de melhores práticas.
+
+8. Previsões de Produção: Gráficos ou tabelas que incluem previsões de produção futura com base em modelos de análise de dados, ajudando os usuários a planejar e antecipar futuras demandas e necessidades.
+
+9. Filtros e Controles Interativos: Recursos que permitem aos usuários filtrar e visualizar os dados de acordo com suas necessidades específicas, como por data, localização geográfica ou tipo de equipamento.
+
