@@ -1,0 +1,2 @@
+Este projeto consistiu no desenvolvimento de um dashboard personalizado para monitorar o desempenho das operações de extração de petróleo em uma área específica de produção. 
+O objetivo era fornecer uma ferramenta visual intuitiva e informativa que permitisse aos gerentes e engenheiros acompanhar o progresso das operações em tempo real e tomar decisões estratégicas com base nos dados apresentados.
